@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="new.css">
+</head>
+
+
+<body>
+
+   <nav class="navbar">
+    <h1>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <button><a href="sign_in.html">Login</a></button>
+      <button><a href="sign.html">Resister</a></button>
+    </h1>
+  </nav>
+
+
+
+<h1>Water Conservation Feedback</h1>
+
+<form>
+  <p>Name: <input type="text" name="name" required></p>
+  <p>Age: <input type="number" name="age" required></p>
+
+  <p>Gender:
+    <input type="radio" name="gender" value="male" required> Male
+    <input type="radio" name="gender" value="female" required> Female
+  </p>
+
+  <p>Are you aware of water-saving practices?
+    <select name="awareness" required>
+      <option value="">--Select--</option>
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+  </p>
+
+  <p>Feedback:
+    <textarea name="feedback" rows="5"></textarea>
+  </p>
+
+  <p>Email: <input type="email" name="email" required></p>
+  <p><input type="submit" value="Submit"> <input type="reset" value="Reset"></p>
+</form>
+
+</body>
+</html>

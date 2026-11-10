@@ -1,0 +1,147 @@
+/* 🎨 Root Variables for Theme */
+:root {
+    --primary-color: #004d99;
+    --secondary-color: #77dc8b;
+    --accent-color: #ffd700;
+    --hover-color: #003366;
+    --navbar-alt-color: #1616ce;
+    --text-color: #1f3a1f;
+    --background-color: #f0f8ff;
+  }
+  
+  /* 🌿 Global Styles */
+  body {
+    background-color: var(--background-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+  }
+  
+  h1, h2, h3 {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  img {
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #999;
+  }
+  
+  /* 🌐 Navigation Bar */
+  .navbar {
+    background-color: var(--navbar-alt-color);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .navbar h1 {
+    text-align: center;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: limegreen;
+    text-decoration: underline;
+  }
+  
+  /* 🖋 Form Styling */
+  form {
+    background: white;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 30px auto;
+  }
+  
+  form p {
+    margin: 10px 0;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    font-size: 16px;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 5px var(--primary-color);
+  }
+  
+  /* 🔘 Buttons */
+  button,
+  input[type="submit"],
+  input[type="reset"] {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin: 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  button:hover,
+  input[type="submit"]:hover,
+  input[type="reset"]:hover {
+    background-color: var(--hover-color);
+  }
+  
+  button:focus {
+    outline: 2px solid #006699;
+  }
+  
+  /* 📥 Footer */
+  footer {
+    text-align: center;
+    background: var(--primary-color);
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+  }
+  
+  footer a {
+    color: var(--accent-color);
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  /* 📱 Responsive Enhancements */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    form {
+      padding: 15px;
+    }
+  
+    img {
+      width: 100%;
+    }
+  }
+  
